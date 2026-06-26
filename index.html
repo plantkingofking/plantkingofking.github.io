@@ -1,16 +1,113 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>PlantKingOfKing</title>
+  <meta charset="UTF-8">
+  <title>PlantKingOfKing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8f1;
+      color: #1f2d1f;
+    }
+
+    header {
+      background: #2f5d3a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #24472d;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #2f5d3a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
+  <header>
     <h1>🌿 PlantKingOfKing</h1>
+    <p>식물 도감 · 야외조사 기록 · 식물 맞히기 게임</p>
+  </header>
 
-    <p>안녕하세요!</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Plant Quiz</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="notes.html">Field Notes</a>
+    <a href="papers.html">Paper Notes</a>
+  </nav>
 
-    <p>이곳은 저의 식물 도감과 연구 기록을 위한 홈페이지입니다.</p>
+  <main>
+    <section class="card">
+      <h2>About This Site</h2>
+      <p>
+        이 사이트는 식물 관찰 기록, 식물분류학 공부, 논문 정리,
+        그리고 식물 이름 맞히기 게임을 위한 개인 홈페이지입니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>🌿 Plant Quiz</h2>
+      <p>
+        식물 사진을 보고 국명, 학명, 과 이름을 맞히는 퀴즈를 만들 예정입니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>📷 Plant Gallery</h2>
+      <p>
+        야외조사에서 관찰한 식물 사진들을 정리하는 공간입니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>📚 Study & Research</h2>
+      <p>
+        논문 읽기, GBIF 데이터 처리, R 프로젝트 기록을 정리할 예정입니다.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 PlantKingOfKing
+  </footer>
 </body>
-
 </html>
