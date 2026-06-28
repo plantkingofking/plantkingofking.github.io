@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Quiz</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8f1;
+      color: #1f2d1f;
+      text-align: center;
+    }
+
+    nav {
+      background: #24472d;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 56px;
+      color: #2f5d3a;
+    }
+
+    .quiz-card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    img {
+      max-width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 12px;
+      width: 70%;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #2f5d3a;
+      color: white;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Plant Quiz</a>
+  </nav>
+
+  <main>
+    <h1>🌿 Plant Quiz</h1>
+
+    <div class="quiz-card">
+      <img id="plantImage" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Camellia_japonica_001.JPG">
+
+      <h2>이 식물의 이름은?</h2>
+
+      <input id="answer" type="text" placeholder="식물 이름 입력">
+      <button onclick="checkAnswer()">제출</button>
+
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script>
+    const correctAnswer = "동백나무";
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById("answer").value.trim();
+      const result = document.getElementById("result");
+
+      if (userAnswer === correctAnswer) {
+        result.textContent = "정답! 🎉";
+        result.style.color = "green";
+      } else {
+        result.textContent = "오답! 정답은 " + correctAnswer + "입니다.";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
