@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>웃긴 식물 리스트</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8f1;
+      color: #1f2d1f;
+    }
+
+    nav {
+      background: #24472d;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 56px;
+      color: #2f5d3a;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .plant-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .plant-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .plant-card a {
+      display: block;
+      padding: 18px;
+      color: #2f5d3a;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .plant-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Plant Quiz</a>
+    <a href="funny-plants.html">Funny Plants</a>
+  </nav>
+
+  <header>
+    <h1>🌱 웃긴 식물 리스트</h1>
+    <p>이름이 너무 억울하거나 이상하게 기억에 남는 식물들</p>
+  </header>
+
+  <main>
+    <div class="gallery">
+
+      <div class="plant-card">
+        <img src="images/veronica.jpg" alt="개불알풀">
+        <a href="funny-plants/veronica.html">개불알풀</a>
+      </div>
+
+      <div class="plant-card">
+        <img src="images/persicaria.jpg" alt="며느리밑씻개">
+        <a href="funny-plants/persicaria.html">며느리밑씻개</a>
+      </div>
+
+      <div class="plant-card">
+        <img src="images/valeriana.jpg" alt="쥐오줌풀">
+        <a href="funny-plants/valeriana.html">쥐오줌풀</a>
+      </div>
+
+      <div class="plant-card">
+        <img src="images/astilbe.jpg" alt="노루오줌">
+        <a href="funny-plants/astilbe.html">노루오줌</a>
+      </div>
+
+      <div class="plant-card">
+        <img src="images/lamium.jpg" alt="광대나물">
+        <a href="funny-plants/lamium.html">광대나물</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
